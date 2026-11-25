@@ -1,0 +1,146 @@
+
+{% extends "base.html" %}
+
+{% block title %}SpendWise | Take Control of Your Money{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+    <div class="container hero-grid">
+
+        <div class="hero-content">
+            <span class="eyebrow">YOUR MONEY, YOUR CONTROL</span>
+
+            <h1>Make your money work <span>smarter.</span></h1>
+
+            <p>
+                Track your expenses, manage your monthly budgets, and
+                understand your spending habits with SpendWise.
+            </p>
+
+            <div class="hero-actions">
+                <a href="{{ url_for('register') }}" class="btn">Get Started Free</a>
+                <a href="#features" class="btn btn-outline">Explore Features</a>
+            </div>
+
+            <div class="hero-note">
+                <span class="note-dot"></span>
+                A clearer picture of your money starts here.
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="preview-card">
+                <div class="preview-header">
+                    <div>
+                        <span class="muted-label">TOTAL EXPENSES</span>
+                        <h2>₦0.00</h2>
+                    </div>
+                    <span class="preview-icon">↗</span>
+                </div>
+
+                <div class="preview-divider"></div>
+
+                <div class="preview-row">
+                    <span class="category-icon food-icon">F</span>
+                    <div class="preview-category">
+                        <strong>Food</strong>
+                        <span>Example category</span>
+                    </div>
+                    <strong>₦0.00</strong>
+                </div>
+
+                <div class="preview-row">
+                    <span class="category-icon transport-icon">T</span>
+                    <div class="preview-category">
+                        <strong>Transport</strong>
+                        <span>Example category</span>
+                    </div>
+                    <strong>₦0.00</strong>
+                </div>
+
+                <div class="preview-row">
+                    <span class="category-icon bills-icon">B</span>
+                    <div class="preview-category">
+                        <strong>Bills</strong>
+                        <span>Example category</span>
+                    </div>
+                    <strong>₦0.00</strong>
+                </div>
+
+                <div class="preview-footer">
+                    Your financial overview, all in one place.
+                </div>
+            </div>
+
+            <div class="floating-note">
+                <span class="floating-check">✓</span>
+                <div>
+                    <strong>Stay organized</strong>
+                    <span>One expense at a time</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="features section-padding" id="features">
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="eyebrow">BUILT AROUND YOU</span>
+            <h2>Simple tools for better money habits.</h2>
+            <p>Everything you need to understand where your money goes.</p>
+        </div>
+
+        <div class="feature-grid">
+
+            <article class="feature-card">
+                <div class="feature-icon green-icon">₦</div>
+                <h3>Track Every Expense</h3>
+                <p>
+                    Record your spending and organize transactions
+                    so you can see where your money goes.
+                </p>
+            </article>
+
+            <article class="feature-card">
+                <div class="feature-icon orange-icon">◎</div>
+                <h3>Manage Your Budgets</h3>
+                <p>
+                    Set monthly spending limits and monitor how much
+                    of each budget you've used.
+                </p>
+            </article>
+
+            <article class="feature-card">
+                <div class="feature-icon purple-icon">↗</div>
+                <h3>Understand Your Spending</h3>
+                <p>
+                    Review your spending summaries and identify
+                    opportunities to make better financial decisions.
+                </p>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="cta-section">
+    <div class="container cta-content">
+        <div>
+            <span class="eyebrow">START TODAY</span>
+            <h2>Ready to take control of your spending?</h2>
+            <p>Build better financial habits, one day at a time.</p>
+        </div>
+
+        <a href="{{ url_for('register') }}" class="btn btn-light">
+            Create Your Account
+        </a>
+    </div>
+</section>
+
+{% endblock %}
